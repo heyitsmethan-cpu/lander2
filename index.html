@@ -1,26 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-EG5D4JQCY2"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'G-EG5D4JQCY2');
-  </script>
+      <!-- Google tag (gtag.js) -->
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-EG5D4JQCY2"></script>
+      <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-EG5D4JQCY2');
+      </script>
   
   <meta charset="UTF-8" />
-  <title>Get Paid Now</title>
+  <title>The Future is Here!</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="theme-color" content="#000000" />
 
   <style>
-    html { background: #000; }
-    * { box-sizing: border-box; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; }
+    html {
+      background: #000;
+    }
+
+    * {
+      box-sizing: border-box;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Inter, Helvetica, Arial, sans-serif;
+    }
 
     body {
       margin: 0;
-      background: radial-gradient(circle at top, #0d1a12 0%, #050505 50%, #000 100%);
+      background: radial-gradient(circle at top, #111 0%, #050505 60%, #000 100%);
       color: #fff;
       display: flex;
       justify-content: center;
@@ -30,142 +37,162 @@
     .container {
       width: 100%;
       max-width: 420px;
-      padding: 30px 24px;
+      padding: 40px 20px 60px;
       text-align: center;
     }
 
-    .app-icon {
-      width: 85px;
-      height: 85px;
-      border-radius: 20px;
-      margin-bottom: 15px;
-      box-shadow: 0 0 20px rgba(34, 197, 94, 0.2);
-    }
-
-    .trust-row {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      gap: 8px;
-      margin-bottom: 25px;
-      font-size: 13px;
-      color: #9ca3af;
-    }
-
-    .trustpilot-stars {
-      display: flex;
-      gap: 2px;
-    }
-
-    .star-box {
-      background: #00b67a;
-      padding: 2px;
-      display: flex;
-      align-items: center;
-    }
-
     h1 {
-      font-size: 48px;
+      font-size: 42px;
       font-weight: 800;
-      letter-spacing: -1px;
-      margin: 0 0 15px 0;
-      color: #fff;
+      line-height: 1.1;
+      margin-bottom: 12px;
     }
 
-    h1 span { color: #22c55e; }
-
-    .description {
-      font-size: 16px;
-      line-height: 1.5;
-      color: #9ca3af;
-      margin-bottom: 30px;
-      padding: 0 10px;
+    h1 span {
+      color: #22c55e;
     }
 
-    .info-pill {
-      background: rgba(34, 197, 94, 0.1);
-      border: 1px solid #14532d;
-      border-radius: 12px;
-      padding: 12px;
-      font-size: 13px;
-      margin-bottom: 25px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      gap: 8px;
+    .sub {
+      color: #7ee0a1;
+      font-size: 15px;
+      margin-bottom: 22px;
     }
 
-    .info-pill strong { color: #4ade80; }
+    .pill {
+      display: inline-block;
+      background: #0b1f14;
+      color: #22c55e;
+      padding: 12px 20px;
+      border-radius: 999px;
+      font-weight: 700;
+      margin-bottom: 24px; /* Adjusted spacing */
+      font-size: 15px;
+    }
 
-    /* AGE GATE BUTTONS */
-    .btn {
+    /* MOVED BUTTON CSS HERE & ADJUSTED MARGINS */
+    .cta {
       display: block;
       width: 100%;
-      text-decoration: none;
-      padding: 20px;
-      border-radius: 16px;
-      font-size: 18px;
-      font-weight: 700;
-      margin-bottom: 12px;
-      transition: transform 0.1s;
-    }
-
-    .btn:active { transform: scale(0.98); }
-
-    .btn-primary {
       background: #22c55e;
       color: #000;
+      text-decoration: none;
+      padding: 18px;
+      border-radius: 14px;
+      font-size: 18px;
+      font-weight: 900;
+      margin-bottom: 32px; /* Pushes the steps down */
     }
 
-    .btn-secondary {
-      background: #1a1a1c;
-      color: #fff;
-      border: 1px solid #2d2d2f;
+    .cta:hover {
+      background: #16a34a;
     }
 
-    .footer-text {
-      margin-top: 25px;
-      font-size: 12px;
-      color: #4b5563;
+    .steps {
+      margin-bottom: 28px;
+    }
+
+    .step {
+      background: #0a0a0a;
+      border: 1px solid #1f1f1f;
+      border-radius: 14px;
+      padding: 14px 16px;
+      margin-bottom: 14px;
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      text-align: left;
+    }
+
+    .step.highlight {
+      border-color: #1f5f3a;
+      background: linear-gradient(180deg, #0c1f15, #07120c);
+    }
+
+    .num {
+      min-width: 34px;
+      height: 34px;
+      border-radius: 50%;
+      background: #22c55e;
+      color: #000;
+      font-weight: 800;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .step-text {
+      font-size: 14px;
+      line-height: 1.3;
+    }
+
+    .step-text strong {
+      font-weight: 700;
+    }
+
+    .badge {
+      display: inline-block;
+      background: #14532d;
+      color: #4ade80;
+      font-size: 11px;
+      font-weight: 700;
+      padding: 3px 8px;
+      border-radius: 999px;
+      margin-left: 6px;
+    }
+
+    .reviews {
+      margin-top: 20px;
+      color: #9ca3af;
+      font-size: 13px;
+    }
+
+    .stars {
+      color: #facc15;
+      letter-spacing: 2px;
+      margin-bottom: 6px;
     }
   </style>
 </head>
 <body>
   <div class="container">
-    <img src="logo.png" alt="Icon" class="app-icon">
+    <h1>Get Paid<br><span>Anytime</span></h1>
 
-    <div class="trust-row">
-      <span>Trustpilot</span>
-      <div class="trustpilot-stars">
-        <div class="star-box">★</div>
-        <div class="star-box">★</div>
-        <div class="star-box">★</div>
-        <div class="star-box">★</div>
-        <div class="star-box">★</div>
+    <div class="sub">#1 on Apple App Store</div>
+
+    <div class="pill">Earn up to <strong>$250/day</strong></div>
+
+    <a class="cta" href="https://raintrks.com/r/eyJ0IjoiZnJlZWNhc2gtY3BpIiwidSI6IjY3ZWMyODA3YjAwMTI3NDgzY2FjMmI1YiIsInRzIjoxNzc0MDMxMjA2MTA2fQ">
+      Continue Now
+    </a>
+    <div class="steps">
+      <div class="step">
+        <div class="num">1</div>
+        <div class="step-text">
+          <strong>Sign up free</strong> — Get $5 instantly
+        </div>
       </div>
-      <span><strong>4.8</strong> · 263K+ reviews</span>
+
+      <div class="step highlight">
+        <div class="num">2</div>
+        <div class="step-text">
+          <strong>Choose How You Earn</strong>
+          <span class="badge">IMPORTANT</span><br />
+          Quick 2-Minute Setup
+        </div>
+      </div>
+
+      <div class="step">
+        <div class="num">3</div>
+        <div class="step-text">
+          <strong>Cash out anytime</strong> — PayPal, Crypto, Gift Cards
+        </div>
+      </div>
     </div>
 
-    <h1>Get Paid <span>Now</span></h1>
-
-    <p class="description">
-      Join thousands earning daily for playing games, testing apps while scrolling and cashing out instantly.
-    </p>
-
-    <div class="info-pill">
-      💸 <strong>Instant Payouts:</strong> PayPal, CashApp, Venmo, Crypto & Wire
-    </div>
-
-    <a class="btn btn-primary" href="https://raintrks.com/r/eyJ0IjoiZnJlZWNhc2gtY3BpIiwidSI6IjY3ZWMyODA3YjAwMTI3NDgzY2FjMmI1YiIsInRzIjoxNzc0MDMxMjA2MTA2fQ">
-      I'm over 18
-    </a>
-    
-    <a class="btn btn-secondary" href="https://raintrks.com/r/eyJ0IjoiZnJlZWNhc2gtY3BpIiwidSI6IjY3ZWMyODA3YjAwMTI3NDgzY2FjMmI1YiIsInRzIjoxNzc0MDMxMjA2MTA2fQ">
-      I'm under 18
-    </a>
-
-    <div class="footer-text">
-      Secure SSL Connection · No Credit Card Required
+    <div class="reviews">
+      <div class="stars">★★★★★</div>
+      <div><strong>4.8</strong> · 251k reviews</div>
+      <div>PayPal · Crypto · Bank · Gift Cards</div>
     </div>
   </div>
 </body>
